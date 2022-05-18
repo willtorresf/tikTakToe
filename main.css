@@ -1,0 +1,116 @@
+.title-conteiner{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2em
+}
+
+.main-conteiner{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#conteiner1 , #conteiner2 , #conteiner3 , #conteiner4 , #conteiner5 , #conteiner6 , #conteiner7 , #conteiner8 , #conteiner9{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteiner1{
+    width: 300px;
+    height: 300px;
+    border-right: solid 5px #000;
+    border-bottom: solid 5px #000;
+}
+#conteiner2{
+    width: 300px;
+    height: 300px;
+    border-left: solid 5px #000;
+    border-bottom: solid 5px #000;
+    border-right: solid 5px #000;
+}
+#conteiner3{
+    width: 300px;
+    height: 300px;
+    border-left: solid 5px #000;
+    border-bottom: solid 5px #000;
+}
+#conteiner4{
+    width: 300px;
+    height: 300px;
+    border-right: solid 5px #000;
+    border-bottom: solid 5px #000;
+    border-top: solid 5px #000;
+}
+#conteiner5{
+    width: 300px;
+    height: 300px;
+    border: solid 5px #000;
+}
+#conteiner6{
+    width: 300px;
+    height: 300px;
+    border-left: solid 5px #000;
+    border-bottom: solid 5px #000;
+    border-top: solid 5px #000;
+}
+#conteiner7{
+    width: 300px;
+    height: 300px;
+    border-right: solid 5px #000;
+    border-top: solid 5px #000;
+}
+#conteiner8{
+    width: 300px;
+    height: 300px;
+    border-left: solid 5px #000;
+    border-top: solid 5px #000;
+    border-right: solid 5px #000;
+}
+#conteiner9{
+    width: 300px;
+    height: 300px;
+    border-left: solid 5px #000;
+    border-top: solid 5px #000;
+}
+
+.xPart{
+    position:relative;
+}
+
+.xPart:before,.xPart:after{
+    content:'';
+    position:absolute;
+    width:250px;
+    height:10px;
+    background-color:#000;
+    border-radius:2px;
+    top: 5px;
+}
+
+.xPart:before{
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+    left:-120px;
+}
+.xPart:after{
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    right:-120px;
+}
+
+.oPart{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    border: solid 10px #000;
+    overflow:hidden;
+}

@@ -29,45 +29,69 @@ function createXorO (ctn) {
     ctn.appendChild(create);
 }
 
+//Variables
 let gameArray = []
 
-console.log(gameArray);
-
-let ctn1 = document.getElementById('conteiner1')
-
-console.log(ctn1)
-
-ctn1.addEventListener("click", createXorO(ctn1))
+//Código
+let ctn1 = document.getElementById('conteiner1');
+ctn1.addEventListener("click", function () {
+        if (ctn1.firstChild == null) {
+            createXorO(ctn1);
+        }
+    });
 
 let ctn2 = document.getElementById("conteiner2");
-
-ctn2.addEventListener("click", createXorO(ctn2));
+ctn2.onclick = () => {
+    if (ctn2.firstChild == null) {
+            createXorO(ctn2);
+        }
+};
 
 let ctn3 = document.getElementById("conteiner3");
-
-ctn3.addEventListener("click", createXorO(ctn3));
+ctn3.onclick = () => {
+    if (ctn3.firstChild == null) {
+            createXorO(ctn3);
+        }
+};
 
 let ctn4 = document.getElementById("conteiner4");
-
-ctn4.addEventListener("click", createXorO(ctn4));
+ctn4.onclick = () => {
+    if (ctn4.firstChild == null) {
+            createXorO(ctn4);
+        }
+};
 
 let ctn5 = document.getElementById("conteiner5");
-
-ctn5.addEventListener("click", createXorO(ctn5));
+ctn5.onclick = () => {
+    if (ctn5.firstChild == null) {
+            createXorO(ctn5);
+        }
+};
 
 let ctn6 = document.getElementById("conteiner6");
-
-ctn6.addEventListener("click", createXorO(ctn6));
+ctn6.onclick = () => {
+    if (ctn6.firstChild == null) {
+            createXorO(ctn6);
+        }
+};
 
 let ctn7 = document.getElementById("conteiner7");
-
-ctn7.addEventListener("click", createXorO(ctn7));
+ctn7.onclick = () => {
+    if (ctn7.firstChild == null) {
+            createXorO(ctn7);
+        }
+};
 
 let ctn8 = document.getElementById("conteiner8");
-
-ctn8.addEventListener("click", createXorO(ctn8));
+ctn8.onclick = () => {
+    if (ctn8.firstChild == null) {
+            createXorO(ctn8);
+        }
+};
 
 let ctn9 = document.getElementById("conteiner9");
-
-ctn9.addEventListener("click", createXorO(ctn9));
-
+ctn9.onclick = () => {
+    if (ctn9.firstChild == null) {
+            createXorO(ctn9);
+        }
+};

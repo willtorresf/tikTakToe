@@ -29,7 +29,6 @@ function createXorO (ctn,position) {
     ctn.appendChild(create);
 
     testArray[position] = classShow
-    console.log(testArray);
 }
 
 function createBtn () {
@@ -40,14 +39,6 @@ function createBtn () {
             window.location.reload();
         }
     },500) 
-    
-    /*const btnRetry = document.createElement("button");
-    btnRetry.id = "btnRetry";
-    main.appendChild(btnRetry);
-
-    btnRetry.onclick = () => {
-        window.location.reload();
-    };*/
 }
 
 function checkWin() {
@@ -97,7 +88,6 @@ function checkWin() {
 //Variables
 let gameArray = []
 let testArray = ["a","b","c","d","e","f","g","h","i","j"]
-let main = document.getElementById("main");
 let ctn1 = document.getElementById('conteiner1');
 let ctn2 = document.getElementById("conteiner2");
 let ctn3 = document.getElementById("conteiner3");

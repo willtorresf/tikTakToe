@@ -115,3 +115,99 @@
     border: solid 10px #000;
     overflow:hidden;
 }
+
+.winLine1{
+    position: relative;
+}
+
+.winLine1:after{
+    content:'';
+    position:absolute;
+    width:310px;
+    height:10px;
+    background-color:#f00f;
+    border-radius:2px;
+    top: 150px;
+}
+
+.winLine2{
+    position: relative;
+}
+
+.winLine2:after{
+    content:'';
+    position:absolute;
+    width:10px;
+    height:320px;
+    background-color:#f00f;
+    border-radius:2px;
+    top: 0px;
+}
+
+.winLine3{
+    position: relative;
+}
+
+.winLine3:after{
+    content:'';
+    position:absolute;
+    width:450px;
+    height:10px;
+    background-color:#f00f;
+    border-radius:2px;
+    top: 150px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    right:-70px;
+}
+
+.winLine4{
+    position: relative;
+}
+
+.winLine4:after{
+    content:'';
+    position:absolute;
+    width:450px;
+    height:10px;
+    background-color:#f00f;
+    border-radius:2px;
+    top: 150px;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+    right:-80px;
+}
+
+#btnRetry{
+    content: 'Jugar de nuevo';
+    height: 3em;
+    font-weight: 500;
+    font-size: 1em;
+    width: 3em;
+}
+
+#main, #footer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer{
+    background-color: #000;
+    margin-top: 5em;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    height: 100px;
+}
+
+#header{
+    background-color: #000;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    height: 100px;
+}
